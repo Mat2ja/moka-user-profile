@@ -20,11 +20,11 @@
 
 	&__photo {
 		max-width: 80px;
-		filter: drop-shadow(0 .5rem 1rem rgba(#008afb, 0.25));
+		filter: drop-shadow(0 0.5rem 1rem rgba(#008afb, 0.25));
 	}
 
 	&__name {
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 1.25em;
 	}
 
@@ -38,7 +38,7 @@
 		flex-direction: column;
 
 		&--count {
-			font-weight: 700;
+			font-weight: 600;
 			font-size: 1.1em;
 		}
 
