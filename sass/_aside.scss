@@ -1,0 +1,88 @@
+.aside {
+	max-width: 26rem;
+	flex: 0 1 20vw;
+
+	// background: hsla(240, 16%, 93%, .5);
+	background: var(--bg-aside);
+	backdrop-filter: blur(4px);
+	height: 100vh;
+	overflow-y: auto;
+	padding: 5.5rem 0;
+
+	display: flex;
+	flex-direction: column;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		padding: 0 3.75rem;
+		margin-bottom: 3em;
+		margin-left: 0.4em;
+
+		&--icon {
+			position: relative;
+			top: -2px;
+			color: var(--pink);
+			font-size: 2.4em;
+
+			&:hover {
+				color: var(--pink);
+			}
+		}
+
+		&--text {
+			margin-left: 0.3em;
+			font-size: 1.6em;
+		}
+	}
+}
+
+.nav {
+	&__category {
+		padding-left: 3.75rem;
+		margin-bottom: 1.6em;
+		color: var(--text-lighter);
+		margin-left: 0.1em;
+	}
+
+	&__list {
+		list-style-type: none;
+	}
+	&__item {
+		//
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		font-size: 1.1em;
+		font-weight: 600;
+		color: var(--dark-gray-2);
+
+		padding: 0.7em 3.75rem;
+		width: 90%;
+		border-top-right-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+		transition: all 250ms;
+
+		i {
+			margin-right: 0.75em;
+			font-size: 1.3em;
+		}
+
+		.active {
+			color: var(--purple);
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: white;
+			box-shadow: $shadow;
+			i {
+				color: var(--purple);
+			}
+		}
+	}
+}

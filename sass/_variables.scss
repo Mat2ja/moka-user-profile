@@ -1,0 +1,47 @@
+$font-primary: "Nunito Sans", sans-serif;
+
+// SHADOWS
+$shadow: 0rem 0.2rem 3rem hsla(226, 16%, 73%, 0.2);
+$shadow-2: .1rem 0.2rem 2rem hsla(226, 16%, 73%, 0.1);
+
+$shadow-purple: 0 0.6rem 2rem 0rem rgba(107, 117, 255, 0.4);
+$shadow-purple-2: 0 0.4rem 3rem 0rem rgba(107, 117, 255, 0.6);
+
+$shadow-pink: 0 0.6rem 2rem 0rem rgba(255, 46, 95, 0.3);
+$shadow-pink-2: 0 0.4rem 3rem 0rem rgba(255, 46, 95, 0.5);
+
+$filter-shadow-blue: drop-shadow(0 0.5rem 1rem rgba(#008afb, 0.25));
+
+// BORDER
+$border-radius: 0.4rem;
+$border: 3px solid var(--gray-2);
+
+// CSS VARIABLES
+:root {
+	--gray-1: #fafafb;
+	--gray-2: #f7f7fd;
+	--gray-3: #e9e9ef;
+	--gray-4: #b0b5c6;
+	--white: white;
+	--dark-gray: #2e2e35;
+	--dark-gray-2: hsla(240, 12%, 24%, 0.8);
+	--dark-gray-3: hsla(240, 12%, 24%, 0.55);
+
+	--text-main: var(--dark-gray);
+	--text-second: var(--dark-gray);
+
+	--bg: var(--gray-2);
+	--bg-light: var(--gray-1);
+	--bg-aside: var(--gray-3);
+	--bg-card: var(--white);
+	--icon-color: var(--gray-4);
+
+	--text-dark: var(--dark-gray);
+	--text-lighter: var(--dark-gray-2);
+	--text-lightest: var(--dark-gray-3);
+
+	--pink: #ff2c5e;
+	--purple: #6c75ff;
+	--blue: #008afb;
+	--yellow: #febb27;
+}

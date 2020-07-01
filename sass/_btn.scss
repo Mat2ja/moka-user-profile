@@ -1,0 +1,48 @@
+.btn {
+	font-family: inherit;
+	font-size: inhe.9em;
+	font-weight: 400;
+	padding: 0.6em 1.4em;
+	border-radius: $border-radius;
+	color: white;
+	border: none;
+	cursor: pointer;
+
+	transition: all 400ms ease-in-out;
+
+	&--pink {
+		background: var(--pink);
+		box-shadow: $shadow-pink;
+
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: $shadow-pink-2;
+		}
+	}
+	&--blue {
+		background: var(--purple);
+		box-shadow: $shadow-purple;
+
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: $shadow-purple-2;
+		}
+	}
+}
+
+i {
+	color: var(--icon-color);
+	position: relative;
+
+	transition: all 250ms;
+	cursor: pointer;
+
+	&:hover,
+	&:active,
+	&:focus,
+	&.active {
+		color: var(--purple);
+	}
+}

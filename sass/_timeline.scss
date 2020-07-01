@@ -1,0 +1,86 @@
+.timeline {
+	padding: 1.8em;
+	display: flex;
+	flex-direction: column;
+
+	&__message {
+		display: flex;
+		margin-bottom: 1em;
+
+		&--sub {
+			margin-left: 4.5em;
+		}
+	}
+
+	&__user-photo {
+		max-width: 48px;
+		margin-right: 1.5em;
+		filter: $filter-shadow-blue;
+	}
+
+	&__comment {
+		flex: 1;
+		border: $border;
+		border-radius: $border-radius;
+		box-shadow: $shadow-2;
+		padding: 0.6em 1em;
+		font-size: 0.9em;
+
+		&--title {
+			color: var(--dark-gray-1);
+			font-weight: 700;
+			font-size: 0.9em;
+		}
+
+		&--time {
+			color: var(--dark-gray-3);
+			margin-left: 1.5em;
+			font-size: 0.75em;
+		}
+
+		&--body {
+			color: var(--dark-gray-2);
+			margin: 0.8em 0;
+			max-width: 85%;
+		}
+	}
+
+	&__comment-header {
+		display: flex;
+	}
+
+	&__comment-actions {
+		margin-left: auto;
+
+		display: flex;
+		align-items: center;
+
+		i {
+			margin-left: 0.8em;
+			font-size: 1.2em;
+
+			&.active {
+				color: var(--pink);
+			}
+
+			&:last-child {
+				margin-left: 1.6em;
+			}
+		}
+	}
+
+	&__photos img {
+		margin-right: 0.3em;
+		border-radius: $border-radius;
+		width: 60px;
+		height: 50px;
+		object-fit: cover;
+		object-position: center;
+		transition: all 250ms;
+
+		&:hover,
+		&:focus {
+			transform: scale(1.1);
+		}
+	}
+}

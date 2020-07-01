@@ -1,0 +1,57 @@
+.wrapper {
+	display: flex;
+	min-height: 100vh;
+	background: var(--bg);
+}
+
+.main {
+	flex: 1;
+	padding: 5.5rem 5.5rem;
+	position: relative;
+	height: 100vh;
+
+	max-width: 140rem;
+	margin: 0 auto;
+
+	overflow-y: auto;
+	scrollbar-width: thin;
+}
+
+.user-bar {
+	display: flex;
+	font-size: 1.6em;
+	color: var(--icon-color);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 1.2rem;
+	margin-right: 5.5rem;
+
+	&__photo img {
+		width: 36px;
+		filter: $filter-shadow-blue;
+	}
+
+
+	> * {
+		margin-left: 1.3em;
+		text-shadow: $shadow;
+		cursor: pointer;
+	}
+
+	#notification-icon::after {
+		content: "";
+		position: absolute;
+		top: 1px;
+		right: 2px;
+		height: 0.3em;
+		width: 0.3em;
+		border-radius: 50%;
+		background: var(--pink);
+		box-shadow: 0 0 0 2px white, 0.5px 1px 4px 1px rgba(255, 46, 95, 0.4);
+	}
+}

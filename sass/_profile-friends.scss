@@ -1,0 +1,19 @@
+.profile-friends {
+	padding: 1.8em;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 1.5em;
+
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		column-gap: 0.4em;
+
+		img {
+			max-width: 100%;
+			filter: $filter-shadow-blue;
+		}
+	}
+}

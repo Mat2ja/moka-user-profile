@@ -1,0 +1,45 @@
+.user-status {
+	padding: 1.8em 1.8em 1.4em;
+	display: flex;
+	flex-direction: column;
+
+	&__textarea {
+		width: 100%;
+		border: $border;
+		border-radius: $border-radius;
+		resize: none;
+		overflow: auto;
+		margin-bottom: 0.8em;
+
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		padding: 0.5em;
+
+		scrollbar-width: thin;
+
+		transition: all 250ms;
+
+		&:focus {
+			box-shadow: $shadow-2;
+		}
+
+		&:placeholder-shown {
+			color: var(--dark-gray-3);
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+	}
+
+	i {
+		margin-right: 0.8em;
+		font-size: 1.1em;
+	}
+
+	&__btn {
+		margin-left: auto;
+	}
+}

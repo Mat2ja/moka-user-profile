@@ -1,0 +1,66 @@
+.profile {
+
+
+	.heading-1 {
+		font-size: 2.4em;
+		line-height: 1;
+	}
+
+	&__desc {
+		color: var(--dark-gray-3);
+		margin: 0.6em 0 2em;
+		max-width: 70rem;
+	}
+
+	&__dashboard {
+		min-height: 60vh;
+		padding: 0;
+
+		display: grid;
+		grid-template-columns: 30rem 1fr;
+		grid-template-rows: auto auto auto;
+		gap: 2.54rem;
+
+		> * {
+			border-radius: $border-radius;
+			box-shadow: $shadow;
+			background: var(--bg-card);
+		}
+	}
+
+	&__user {
+		grid-column: 1 / 2;
+		grid-row: 1 / -2;
+	}
+
+	&__status {
+		grid-row: 1 / 2;
+	}
+	
+	&__timeline {
+		grid-row: 2 / -1;
+	}
+
+	&__friends {
+		grid-column: 1 / 2;
+		grid-row: -2 / -1;
+	}
+
+	&__category {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		align-items: center;
+		row-gap: 0.6em;
+		column-gap: 1em;
+		
+		&--title {
+			font-weight: 700;
+			font-size: 0.95em;
+		}
+		&--info {
+			color: var(--dark-gray-3);
+			font-size: 0.85em;
+			margin-left: auto;
+		}
+	}
+}

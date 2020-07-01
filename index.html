@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <meta name="author" content="Matija Osrečki">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="aside">
+                <div class="aside__logo">
+                    <i class='bx bx-coffee-togo aside__logo--icon'></i>
+                    <span class="aside__logo--text">Moka</span>
+                </div>
+                <nav class="aside__nav nav">
+                    <p class="nav__category">Main</p>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <i class='bx bxs-dashboard'></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <i class='bx bxs-user active'></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <i class='bx bxs-group'></i>
+                                Team
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <i class='bx bxs-folder-open'></i>
+                                Document
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <i class='bx bxs-cog'></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+
+
+            <main class="main">
+                <div class="user-bar">
+                    <i class='bx bxs-message-rounded'></i>
+                    <i class='bx bxs-bell' id="notification-icon">
+                    </i>
+                    <div class="user-bar__photo">
+                        <img src="img/user-1.svg" alt="">
+                    </div>
+
+                </div>
+                <section class="profile">
+                    <h1 class="heading-1">Profile</h1>
+                    <p class="profile__desc">
+                        hi mi name es giorgio i woerk in potatoe faktory and since mi padre died in a donkey waggon accident i leav mi wife and ugli daughter to become a pro leagueue of leyendaerio player
+                    </p>
+
+                    <section class="profile__dashboard">
+                        <div class="profile__user user-profile">
+                            <div class="user-profile__bio">
+                                <div class="user-profile__info">
+                                    <img src="img/user-2.svg" alt="" class="user-profile__photo">
+                                    <div class="user-profile__info--text">
+                                        <div class="user-profile__name">Chris D'Elia</div>
+                                        <div class="user-profile__country">United States</div>
+                                    </div>
+                                </div>
+                                <div class="user-profile__follows">
+                                    <div class="user-profile__follows-stats">
+                                        <div class="user-profile__followings">
+                                            <i class='bx bxs-user-detail'></i>
+                                            <p class="user-profile__follows--count">268</p>
+                                            <p class="user-profile__follows--text">Followings</p>
+                                        </div>
+                                        <div class="user-profile__followers">
+                                            <i class='bx bxs-user-plus'></i>
+                                            <p class="user-profile__follows--count">769</p>
+                                            <p class="user-profile__follows--text">Followers</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn--pink user-profile__btn">Follow Now</button>
+                                </div>
+                                <div class="user-profile__about">
+                                    <p class="user-profile__category--title">About me</p>
+                                    <p class="user-profile__about-me">
+                                        Oh, get a job? Just get a job? Why don’t I strap on my job helmet and squeeze down into a job cannon and fire off into job land, where jobs grow on jobbies?!
+                                    </p>
+                                </div>
+                                <div class="profile__category">
+                                    <span class="profile__category--title">Mobile</span>
+                                    <span class="profile__category--info">202-555-0158</span>
+
+                                    <span class="profile__category--title">Email</span>
+                                    <span class="profile__category--info">notguilty@hotmail.com</span>
+
+                                    <span class="profile__category--title">Zodiac</span>
+                                    <span class="profile__category--info">Capricorn</span>
+
+                                    <span class="profile__category--title">Species</span>
+                                    <span class="profile__category--info">Homo Sapiens</span>
+                                </div>
+                            </div>
+
+                            <div class="user-profile__socials">
+                                <a href="#" class="user-profile__socials--circle facebook">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                                <a href="#" class="user-profile__socials--circle twitter">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                                <a href="#" class="user-profile__socials--circle youtube">
+                                    <i class='bx bxl-youtube'></i>
+
+                                </a>
+                                <a href="#" class="user-profile__socials--circle google">
+                                    <i class='bx bxl-google-plus'></i>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="profile__status user-status">
+                            <textarea class="user-status__textarea" placeholder="What's on your mind homie?"></textarea>
+                            <div class="user-status__actions">
+                                <i class='bx bxs-bookmark'></i>
+                                <i class='bx bxl-telegram'></i>
+                                <i class='bx bx-paperclip'></i>
+                                <i class='bx bxs-photo-album'></i>
+                                <i class='bx bxs-camera'></i>
+                                <i class='bx bxs-smile'></i>
+                                <button class="btn btn--blue user-status__btn">Send</button>
+                            </div>
+
+                        </div>
+                        <div class="profile__timeline timeline">
+                            <div class="timeline__message">
+                                <div class="timeline__user">
+                                    <img src="img/user-3.svg" alt="" class="timeline__user-photo">
+                                </div>
+                                <div class="timeline__comment">
+                                    <div class="timeline__comment-header">
+                                        <p class="timeline__comment--title">Karen Dingleberry</p>
+                                        <p class="timeline__comment--time">about 3 days ago</p>
+                                        <div class="timeline__comment-actions">
+                                            <i class='bx bxs-like'></i>
+                                            <i class='bx bxs-dislike active'></i>
+                                            <i class='bx bx-comment-detail'></i>
+                                        </div>
+                                    </div>
+
+                                    <p class="timeline__comment--body">
+                                        I’m hungry as fuck and could eat two Big Macs right now, but I’m trying to be a lady.
+                                    </p>
+
+                                    <div class="timeline__photos">
+                                        <img src="img/burger.jpg" alt="">
+                                        <img src="img/pizza.jpg" alt="">
+                                        <img src="img/veggie-wrap.jpg" alt="">
+                                        <img src="img/cupcake.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline__message timeline__message--sub">
+                                <div class="timeline__user">
+                                    <img src="img/user-4.svg" alt="" class="timeline__user-photo">
+                                </div>
+                                <div class="timeline__comment">
+                                    <div class="timeline__comment-header">
+                                        <p class="timeline__comment--title">Kieran Trippier</p>
+                                        <p class="timeline__comment--time">about 1 day ago</p>
+                                        <div class="timeline__comment-actions">
+                                            <i class='bx bxs-like'></i>
+                                            <i class='bx bxs-dislike'></i>
+                                            <i class='bx bx-comment-detail'></i>
+                                        </div>
+                                    </div>
+                                    <p class="timeline__comment--body">
+                                        Shaking my smh 🥱🥱🥱
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline__message timeline__message--sub">
+                                <div class="timeline__user">
+                                    <img src="img/user-7.svg" alt="" class="timeline__user-photo">
+                                </div>
+                                <div class="timeline__comment">
+                                    <div class="timeline__comment-header">
+                                        <p class="timeline__comment--title">Kieran Trippier</p>
+                                        <p class="timeline__comment--time">about 16 hours ago</p>
+                                        <div class="timeline__comment-actions">
+                                            <i class='bx bxs-like active'></i>
+                                            <i class='bx bxs-dislike'></i>
+                                            <i class='bx bx-comment-detail'></i>
+                                        </div>
+                                    </div>
+                                    <p class="timeline__comment--body">
+                                        YASSSSSS!! Preach it gurl 🙌
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline__message">
+                                <div class="timeline__user">
+                                    <img src="img/user-5.svg" alt="" class="timeline__user-photo">
+                                </div>
+                                <div class="timeline__comment">
+                                    <div class="timeline__comment-header">
+                                        <p class="timeline__comment--title">Chad Homie</p>
+                                        <p class="timeline__comment--time">about 4 hours ago</p>
+                                        <div class="timeline__comment-actions">
+                                            <i class='bx bxs-like active'></i>
+                                            <i class='bx bxs-dislike'></i>
+                                            <i class='bx bx-comment-detail'></i>
+                                        </div>
+                                    </div>
+
+                                    <p class="timeline__comment--body">
+                                        🐸 its wednesday my dudes 🐸
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline__message">
+                                <div class="timeline__user">
+                                    <img src="img/user-6.svg" alt="" class="timeline__user-photo">
+                                </div>
+                                <div class="timeline__comment">
+                                    <div class="timeline__comment-header">
+                                        <p class="timeline__comment--title">Donna Bish</p>
+                                        <p class="timeline__comment--time">about 6 days ago</p>
+                                        <div class="timeline__comment-actions">
+                                            <i class='bx bxs-like'></i>
+                                            <i class='bx bxs-dislike'></i>
+                                            <i class='bx bx-comment-detail'></i>
+                                        </div>
+                                    </div>
+
+                                    <p class="timeline__comment--body">
+                                        Babe take me back...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__friends profile-friends">
+                            <div class="profile__category">
+                                <span class="profile__category--title">List</span>
+                                <span class="profile__category--info">12</span>
+                            </div>
+                            <div class="profile-friends__list">
+                                <img src="img/user-8.svg" alt="friend">
+                                <img src="img/user-9.svg" alt="friend">
+                                <img src="img/user-10.svg" alt="friend">
+                                <img src="img/user-11.svg" alt="friend">
+                                <img src="img/user-12.svg" alt="friend">
+                            </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </body>
+
+</html>
