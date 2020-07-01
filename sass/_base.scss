@@ -30,3 +30,21 @@ a {
 :focus {
 	outline: none;
 }
+
+::selection {
+	background: var(--purple-opaque);
+	color: var(--bg);
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--dark-gray-4);
+}
+
+img {
+	user-select: none;
+}

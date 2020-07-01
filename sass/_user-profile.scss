@@ -72,12 +72,24 @@
 		border: $border;
 		border-radius: $border-radius;
 		padding: 0.8em;
+
+
+		transition: all 250ms ease-in-out;
 	}
 
 	&__followings {
 		margin-right: 1.2em;
+
+		box-shadow: $shadow-blue;
+		&:hover,
+		&:focus {
+		}
 	}
 	&__followers {
+		box-shadow: $shadow-yellow;
+		&:hover,
+		&:focus {
+		}
 	}
 
 	&__followings i {
