@@ -2,6 +2,11 @@
 	display: flex;
 	background: var(--bg);
 	height: 100vh;
+
+	/* navbar on top */
+	@include respond(sm) {
+		flex-direction: column;
+	}
 }
 
 .main {
@@ -47,10 +52,10 @@
 		justify-content: center;
 		padding-left: 0;
 		padding-right: 0;
+		position: absolute;
+		margin-top: .4em;
 	}
 
-	i {
-	}
 	&__photo img {
 		width: 36px;
 		filter: $filter-shadow-blue;

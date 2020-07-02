@@ -24,9 +24,13 @@
 			grid-template-columns: repeat(6, 1fr);
 			gap: 0.4em;
 		}
+		@include respond(xs) {
+			grid-template-columns: repeat(4,1fr);
+		}
 
 		img {
 			max-width: 100%;
+			cursor: pointer;
 			filter: $filter-shadow-blue;
 
 			@include respond(md) {

@@ -1,6 +1,7 @@
 .profile {
 	padding: 5.5rem;
 	padding-top: 0;
+	position: relative;
 
 	@include respond(xl) {
 		padding: 5rem 3rem;
@@ -10,6 +11,7 @@
 	@include respond(sm) {
 		padding: 5rem 2rem;
 		padding-top: 0;
+		margin-top: 8rem;
 	}
 
 	.heading-1 {
@@ -37,6 +39,9 @@
 		}
 
 		@include respond(sm) {
+			margin-left: auto;
+			margin-right: auto;
+
 			text-align: justify;
 			text-align-last: center;
 			// overflow: hidden;

@@ -30,6 +30,12 @@
 			box-shadow: $shadow-purple-2;
 		}
 	}
+
+	&--no-outline {
+		background: transparent;
+		box-shadow: none;
+		color: var(--purple);
+	}
 }
 
 i {
