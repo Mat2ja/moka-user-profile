@@ -1,5 +1,5 @@
 .timeline {
-	padding: 1.8em;
+	padding-left: 1.5em;
 	display: flex;
 	flex-direction: column;
 
@@ -9,12 +9,31 @@
 
 		&--sub {
 			margin-left: 4.5em;
+
+			@include respond(md) {
+				margin-left: 0;
+				position: relative;
+				display: flex;
+				padding-left: 1.5em;
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: 30%;
+					left: 0;
+					background: var(--purple);
+					width: 0.4rem;
+					height: 1.2rem;
+					border-radius: 100rem;
+					align-self: center;
+				}
+			}
 		}
 	}
 
 	&__user-photo {
 		max-width: 48px;
-		margin-right: 1.5em;
+		margin-right: 1em;
 		filter: $filter-shadow-blue;
 	}
 
@@ -82,6 +101,32 @@
 		&:hover,
 		&:focus {
 			transform: scale(1.1);
+		}
+	}
+
+	&__btn {
+		width: max-content;
+		margin: auto;
+		background: transparent;
+		box-shadow: none;
+		color: var(--purple);
+		transition: all 250ms;
+
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			box-shadow: none;
+			color: var(--pink);
+
+			i {
+				color: var(--pink);
+			}
+		}
+
+		i {
+			color: var(--purple);
+			margin-left: .3em;
 		}
 	}
 }

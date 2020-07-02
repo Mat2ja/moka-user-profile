@@ -1,20 +1,17 @@
 .wrapper {
 	display: flex;
-	min-height: 100vh;
 	background: var(--bg);
+	height: 100vh;
 }
 
 .main {
 	flex: 1;
-	padding: 5.5rem 5.5rem;
-	position: relative;
-	height: 100vh;
-
-	max-width: 140rem;
 	margin: 0 auto;
-
+	max-width: 140rem;
 	overflow-y: auto;
 	scrollbar-width: thin;
+
+	position: relative;
 }
 
 .user-bar {
@@ -25,22 +22,60 @@
 	align-items: center;
 	justify-content: flex-end;
 
-	position: absolute;
+	position: sticky;
 	top: 0;
-	right: 0;
-	margin-top: 1.2rem;
-	margin-right: 5.5rem;
+	left: 0;
+	background-color: var(--bg);
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 0rem 2rem var(--bg);
 
+	padding-top: 1rem;
+	padding-bottom: 0.6rem;
+	padding-right: 5.5rem;
+
+	@include respond(xxl) {
+		padding-right: 3rem;
+	}
+	@include respond(xl) {
+		font-size: 1.5em;
+	}
+	@include respond(md) {
+		font-size: 1.4em;
+	}
+	@include respond(sm) {
+		justify-content: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	i {
+	}
 	&__photo img {
 		width: 36px;
 		filter: $filter-shadow-blue;
 	}
 
-
 	> * {
 		margin-left: 1.3em;
 		text-shadow: $shadow;
 		cursor: pointer;
+
+		&:first-child {
+			margin-left: 0;
+
+			@include respond(sm) {
+				order: -2;
+			}
+		}
+
+		&:last-child {
+			order: 1;
+
+			@include respond(sm) {
+				order: -1;
+			}
+		}
 	}
 
 	#notification-icon::after {

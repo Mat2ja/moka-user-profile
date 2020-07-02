@@ -1,19 +1,46 @@
 .profile-friends {
-	padding: 1.8em;
+	display: flex;
+	flex-direction: column;
+
+	
+
 
 	&__list {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		flex: 1;
 		margin-top: 1.5em;
 
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		column-gap: 0.4em;
+		gap: 0.4em;
+
+		@include respond(md) {
+			margin-top: 0.75em;
+
+			grid-template-columns: 1fr 1fr;
+			justify-content: space-around;
+		}
+
+		@include respond(sm) {
+			grid-template-columns: repeat(6, 1fr);
+			gap: 0.4em;
+		}
 
 		img {
 			max-width: 100%;
 			filter: $filter-shadow-blue;
+
+			@include respond(md) {
+				max-height: 100px;
+			}
+
+			&:nth-child(11),
+			&:nth-child(12) {
+				display: none;
+
+				@include respond(md) {
+					display: block;
+				}
+			}
 		}
 	}
 }

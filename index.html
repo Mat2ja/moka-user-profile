@@ -35,31 +35,31 @@
                         <li class="nav__item">
                             <a href="#" class="nav__link">
                                 <i class='bx bxs-dashboard'></i>
-                                Dashboard
+                                <span>Dashboard</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
                                 <i class='bx bxs-user active'></i>
-                                Profile
+                                <span>Profile</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
                                 <i class='bx bxs-group'></i>
-                                Team
+                                <span>Team</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
                                 <i class='bx bxs-folder-open'></i>
-                                Document
+                                <span>Document</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
                                 <i class='bx bxs-cog'></i>
-                                Settings
+                                <span>Settings</span>
                             </a>
                         </li>
                     </ul>
@@ -87,48 +87,53 @@
                     <section class="profile__dashboard">
                         <div class="profile__user user-profile">
                             <div class="user-profile__bio">
-                                <div class="user-profile__info">
-                                    <img src="img/user-2.svg" alt="" class="user-profile__photo">
-                                    <div class="user-profile__info--text">
-                                        <div class="user-profile__name">Chris D'Elia</div>
-                                        <div class="user-profile__country">United States</div>
-                                    </div>
-                                </div>
-                                <div class="user-profile__follows">
-                                    <div class="user-profile__follows-stats">
-                                        <div class="user-profile__followings">
-                                            <i class='bx bxs-user-detail'></i>
-                                            <p class="user-profile__follows--count">268</p>
-                                            <p class="user-profile__follows--text">Followings</p>
-                                        </div>
-                                        <div class="user-profile__followers">
-                                            <i class='bx bxs-user-plus'></i>
-                                            <p class="user-profile__follows--count">769</p>
-                                            <p class="user-profile__follows--text">Followers</p>
+                                <div class="user-profile__head">
+                                    <div class="user-profile__info">
+                                        <img src="img/user-2.svg" alt="" class="user-profile__photo">
+                                        <div class="user-profile__info--text">
+                                            <div class="user-profile__name">Chris D'Elia</div>
+                                            <div class="user-profile__country">United States</div>
                                         </div>
                                     </div>
-                                    <button class="btn btn--pink user-profile__btn">Follow Now</button>
+                                    <div class="user-profile__follows">
+                                        <div class="user-profile__follows-stats">
+                                            <div class="user-profile__followings">
+                                                <i class='bx bxs-user-detail'></i>
+                                                <p class="user-profile__follows--count">268</p>
+                                                <p class="user-profile__follows--text">Followings</p>
+                                            </div>
+                                            <div class="user-profile__followers">
+                                                <i class='bx bxs-user-plus'></i>
+                                                <p class="user-profile__follows--count">769</p>
+                                                <p class="user-profile__follows--text">Followers</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn--pink user-profile__btn">Follow</button>
+                                    </div>
                                 </div>
-                                <div class="user-profile__about">
-                                    <p class="user-profile__category--title">About me</p>
-                                    <p class="user-profile__about-me">
-                                        Oh, get a job? Just get a job? Why don’t I strap on my job helmet and squeeze down into a job cannon and fire off into job land, where jobs grow on jobbies?!
-                                    </p>
-                                </div>
-                                <div class="profile__category">
-                                    <span class="profile__category--title">Mobile</span>
-                                    <span class="profile__category--info">202-555-0158</span>
+                                <div class="user-profile__body">
+                                    <div class="user-profile__about">
+                                        <p class="user-profile__category--title">About me</p>
+                                        <p class="user-profile__about-me">
+                                            Oh, get a job? Just get a job? Why don’t I strap on my job helmet and squeeze down into a job cannon and fire off into job land, where jobs grow on jobbies?!
+                                        </p>
+                                    </div>
+                                    <div class="profile__category">
+                                        <span class="profile__category--title">Mobile</span>
+                                        <span class="profile__category--info">202-555-0158</span>
 
-                                    <span class="profile__category--title">Email</span>
-                                    <span class="profile__category--info">notguilty@hotmail.com</span>
+                                        <span class="profile__category--title">Email</span>
+                                        <span class="profile__category--info">notguilty@hotmail.com</span>
 
-                                    <span class="profile__category--title">Zodiac</span>
-                                    <span class="profile__category--info">Capricorn</span>
+                                        <span class="profile__category--title">Zodiac</span>
+                                        <span class="profile__category--info">Capricorn</span>
 
-                                    <span class="profile__category--title">Species</span>
-                                    <span class="profile__category--info">Homo Sapiens</span>
+                                        <span class="profile__category--title">Species</span>
+                                        <span class="profile__category--info">Homo Sapiens</span>
+                                    </div>
                                 </div>
                             </div>
+
 
                             <div class="user-profile__socials">
                                 <a href="#" class="user-profile__socials--circle facebook">
@@ -156,7 +161,7 @@
                                 <i class='bx bxs-photo-album'></i>
                                 <i class='bx bxs-camera'></i>
                                 <i class='bx bxs-smile'></i>
-                                <button class="btn btn--blue user-status__btn">Send</button>
+                                <button class="btn btn--purple user-status__btn">Send</button>
                             </div>
 
                         </div>
@@ -266,18 +271,28 @@
                                     </p>
                                 </div>
                             </div>
+                            <button class="btn btn--purple timeline__btn">See More <i class='bx bxs-chevron-down'></i></button>
                         </div>
                         <div class="profile__friends profile-friends">
                             <div class="profile__category">
                                 <span class="profile__category--title">Close friends</span>
-                                <span class="profile__category--info">12</span>
+                                <span class="profile__category--info">19</span>
                             </div>
                             <div class="profile-friends__list">
                                 <img src="img/user-8.svg" alt="friend">
-                                <img src="img/user-9.svg" alt="friend">
-                                <img src="img/user-10.svg" alt="friend">
+                                <img src="img/user-18.svg" alt="friend">
                                 <img src="img/user-11.svg" alt="friend">
                                 <img src="img/user-12.svg" alt="friend">
+
+
+                                <img src="img/user-13.svg" alt="friend">
+                                <img src="img/user-14.svg" alt="friend">
+                                <img src="img/user-15.svg" alt="friend">
+                                <img src="img/user-16.svg" alt="friend">
+                                <img src="img/user-19.svg" alt="friend">
+                                <img src="img/user-9.svg" alt="friend">
+                                <img src="img/user-10.svg" alt="friend">
+                                <img src="img/user-17.svg" alt="friend">
                             </div>
                     </section>
                 </section>

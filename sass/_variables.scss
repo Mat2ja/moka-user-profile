@@ -4,19 +4,19 @@ $font-primary: "Open Sans", sans-serif;
 $shadow: 0rem 0.2rem 3rem hsla(226, 16%, 73%, 0.2);
 $shadow-2: 0.1rem 0.2rem 2rem hsla(226, 16%, 73%, 0.1);
 
-$shadow-purple: 0 0.3rem 2rem rgba(107, 117, 255, 0.4);
-$shadow-purple-2: 0 0.1rem 3rem rgba(107, 117, 255, 0.6);
+$shadow-purple: 0 0.3rem 3rem rgba(107, 117, 255, 0.45);
+$shadow-purple-2: 0 0.1rem 4rem rgba(107, 117, 255, 0.55);
 
-$shadow-pink: 0 0.3rem 2rem rgba(255, 46, 95, 0.3);
-$shadow-pink-2: 0 0.1rem 3rem rgba(255, 46, 95, 0.5);
+$shadow-pink: 0 0.3rem 3rem rgba(255, 46, 95, 0.4);
+$shadow-pink-2: 0 0.1rem 4rem rgba(255, 46, 95, 0.5);
 
-$shadow-blue: 0 0 1.5rem rgba(0, 138, 251, .08);
-$shadow-yellow: 0 0 1.5rem rgba(254, 185, 37, 0.11);
+$shadow-blue: 0 0 1.5rem rgba(0, 138, 251, .1);
+$shadow-yellow: 0 0 1.5rem rgba(254, 185, 37, 0.17);
 
-$shadow-pink: 0 0.6rem 2rem rgba(255, 46, 95, 0.3);
-$shadow-pink-2: 0 0.4rem 3rem rgba(255, 46, 95, 0.5);
 
-$filter-shadow-blue: drop-shadow(0 0.5rem 1rem rgba(#008afb, 0.25));
+
+$filter-shadow-blue: drop-shadow(0 0.5rem 1.2rem rgba(#008afb, .3));
+$filter-shadow-purple: drop-shadow(0 0.5rem 1.2rem rgba(#6c75ff, .3));
 
 // BORDER
 $border-radius: 0.4rem;

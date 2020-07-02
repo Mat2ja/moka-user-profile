@@ -1,23 +1,36 @@
 .aside {
+	flex: 0 0 16vw;
 	max-width: 26rem;
-	flex: 0 1 20vw;
 
 	// background: hsla(240, 16%, 93%, .5);
 	background: var(--bg-aside);
 	backdrop-filter: blur(4px);
 	height: 100vh;
-	overflow-y: auto;
 	padding: 5.5rem 0;
 
 	display: flex;
 	flex-direction: column;
 
+	@include respond(lg) {
+		max-width: max-content;
+		padding: 1rem 0;
+	}
+
 	&__logo {
 		display: flex;
 		align-items: center;
-		padding: 0 3.75rem;
+		justify-content: center;
+		margin-left: -1em;
 		margin-bottom: 3em;
-		margin-left: 0.4em;
+		padding: 0 1em;
+
+		@include respond(lg) {
+			flex-direction: column;
+			margin-left: 0;
+			margin-bottom: 0;
+			order: 1;
+			margin-top: auto;
+		}
 
 		&--icon {
 			position: relative;
@@ -28,11 +41,19 @@
 			&:hover {
 				color: var(--pink);
 			}
+
+			@include respond(lg) {
+				font-size: 1.6em;
+			}
 		}
 
 		&--text {
 			margin-left: 0.3em;
 			font-size: 1.6em;
+
+			@include respond(lg) {
+				display: none;
+			}
 		}
 	}
 }
@@ -43,13 +64,23 @@
 		margin-bottom: 1.6em;
 		color: var(--text-lighter);
 		margin-left: 0.1em;
+
+		@include respond(xxl) {
+			padding-left: 2.75rem;
+		}
+
+		@include respond(xl) {
+			padding-left: 1.5rem;
+		}
+		@include respond(lg) {
+			display: none;
+		}
 	}
 
 	&__list {
 		list-style-type: none;
 	}
 	&__item {
-		//
 	}
 
 	&__link {
@@ -61,14 +92,43 @@
 		color: var(--dark-gray-2);
 
 		padding: 0.7em 3.75rem;
+		padding-right: 0;
 		width: 90%;
 		border-top-right-radius: $border-radius;
 		border-bottom-right-radius: $border-radius;
 		transition: all 250ms;
 
+		@include respond(xxl) {
+			padding-left: 2.75rem;
+
+			span {
+				font-size: 0.95em;
+			}
+		}
+		@include respond(xl) {
+			padding-left: 1.5rem;
+
+			span {
+				font-size: 0.9em;
+			}
+		}
+
+		@include respond(lg) {
+			padding-left: 0;
+			justify-content: center;
+
+			span {
+				display: none;
+			}
+		}
+
 		i {
 			margin-right: 0.75em;
 			font-size: 1.3em;
+
+			@include respond(lg) {
+				margin-right: 0;
+			}
 		}
 
 		.active {
