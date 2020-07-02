@@ -29,12 +29,20 @@
 				}
 			}
 		}
+
+		@include respond (sm) {
+			flex-direction: column;
+		}
 	}
 
 	&__user-photo {
 		max-width: 48px;
 		margin-right: 1em;
 		filter: $filter-shadow-blue;
+
+		@include respond (sm) {
+			width: 30px;
+		}
 	}
 
 	&__comment {
@@ -102,6 +110,8 @@
 		&:focus {
 			transform: scale(1.1);
 		}
+
+		
 	}
 
 	&__btn {

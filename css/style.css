@@ -137,7 +137,7 @@ i {
   left: 0;
   background-color: var(--bg);
   width: 100%;
-  z-index: 100;
+  z-index: 50;
   box-shadow: 0 0rem 2rem var(--bg);
   padding-top: 1rem;
   padding-bottom: 0.6rem;
@@ -193,6 +193,7 @@ i {
   backdrop-filter: blur(4px);
   height: 100vh;
   padding: 5.5rem 0;
+  z-index: 60;
   display: flex;
   flex-direction: column; }
   @media only screen and (max-width: 980px) {
@@ -203,7 +204,9 @@ i {
     .aside {
       flex-direction: row;
       max-width: 100vw;
-      padding: 0 1.2em; } }
+      padding: .6rem 1.4rem;
+      box-shadow: 0rem 0.2rem 3rem rgba(175, 180, 197, 0.2);
+      flex-basis: max-content; } }
   .aside__logo {
     display: flex;
     align-items: center;
@@ -236,7 +239,7 @@ i {
           align-items: center; } }
       @media only screen and (max-width: 640px) {
         .aside__logo--icon {
-          font-size: 2.2em; } }
+          font-size: 2em; } }
     .aside__logo--text {
       margin-left: 0.3em;
       font-size: 1.6em; }
@@ -246,6 +249,10 @@ i {
 
 .nav {
   flex: 1; }
+  @media only screen and (max-width: 640px) {
+    .nav {
+      display: flex;
+      justify-content: flex-end; } }
   .nav__category {
     padding-left: 3.75rem;
     margin-bottom: 1.6em;
@@ -260,10 +267,6 @@ i {
     @media only screen and (max-width: 980px) {
       .nav__category {
         display: none; } }
-  @media only screen and (max-width: 640px) {
-    .nav {
-      display: flex;
-      justify-content: flex-end; } }
   .nav__list {
     list-style-type: none;
     display: flex;
@@ -302,7 +305,7 @@ i {
           display: none; } }
     @media only screen and (max-width: 640px) {
       .nav__link {
-        margin: 0 .5em;
+        margin: 0 0.5em;
         border-radius: 0.4rem; } }
     .nav__link i {
       margin-right: 0.75em;
@@ -328,8 +331,7 @@ i {
       padding-top: 0; } }
   @media only screen and (max-width: 640px) {
     .profile {
-      padding: 5rem 2rem;
-      padding-top: 0;
+      padding: 0;
       margin-top: 8rem; } }
   .profile .heading-1 {
     font-size: 2.4em;
@@ -340,7 +342,8 @@ i {
         margin-top: 1rem; } }
     @media only screen and (max-width: 640px) {
       .profile .heading-1 {
-        text-align: center; } }
+        text-align: center;
+        padding: 0 1rem; } }
   .profile__desc {
     color: var(--dark-gray-3);
     margin-top: 0.8em;
@@ -354,13 +357,14 @@ i {
         margin-left: auto;
         margin-right: auto;
         text-align: justify;
-        text-align-last: center; } }
+        text-align-last: center;
+        padding: 0 1.5rem; } }
   .profile__dashboard {
     margin-top: 1.5em;
     display: grid;
     grid-template-columns: 30rem 1fr;
     grid-template-rows: auto auto auto;
-    gap: 2.54rem; }
+    gap: 2.5rem; }
     @media only screen and (max-width: 1160px) {
       .profile__dashboard {
         grid-template-columns: 30rem 1fr; } }
@@ -368,6 +372,11 @@ i {
       .profile__dashboard {
         grid-template-columns: 1fr 18rem;
         grid-template-rows: repeat(4, max-content); } }
+    @media only screen and (max-width: 640px) {
+      .profile__dashboard {
+        grid-template-columns: 1fr 18rem;
+        grid-template-rows: repeat(4, max-content);
+        gap: 1.5rem; } }
     .profile__dashboard > * {
       border-radius: 0.4rem;
       box-shadow: 0rem 0.2rem 3rem rgba(175, 180, 197, 0.2);
@@ -376,6 +385,9 @@ i {
       @media only screen and (max-width: 1160px) {
         .profile__dashboard > * {
           padding: 1.4em; } }
+      @media only screen and (max-width: 640px) {
+        .profile__dashboard > * {
+          padding: 1em; } }
   .profile__user {
     grid-column: 1 / 2;
     grid-row: 1 / -2; }
@@ -418,7 +430,8 @@ i {
       grid-row: 2/ 3; }
     .profile__status {
       grid-column: 1 / -1;
-      grid-row: 3 / 4; }
+      grid-row: 3 / 4;
+      height: 20rem; }
     .profile__timeline {
       grid-column: 1 / -1;
       grid-row: 4 / -1; } }
@@ -692,10 +705,16 @@ i {
             height: 1.2rem;
             border-radius: 100rem;
             align-self: center; } }
+    @media only screen and (max-width: 640px) {
+      .timeline__message {
+        flex-direction: column; } }
   .timeline__user-photo {
     max-width: 48px;
     margin-right: 1em;
     filter: drop-shadow(0 0.5rem 1.2rem rgba(0, 138, 251, 0.3)); }
+    @media only screen and (max-width: 640px) {
+      .timeline__user-photo {
+        width: 30px; } }
   .timeline__comment {
     flex: 1;
     border: 3px solid var(--gray-2);
