@@ -94,7 +94,7 @@
 		color: var(--text-lighter);
 		margin-left: 0.1em;
 
-		@include respond(xlg) {
+		@include respond(xl) {
 			padding-left: 2.75rem;
 		}
 
@@ -131,12 +131,9 @@
 		border-bottom-right-radius: $border-radius;
 		transition: all 250ms;
 
-		@include respond(xlg) {
+		@include respond(xl) {
 			padding-left: 2.75rem;
 
-			span {
-				font-size: 0.95em;
-			}
 		}
 
 		@include respond(lg) {

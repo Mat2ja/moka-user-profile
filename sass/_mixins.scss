@@ -2,9 +2,9 @@ $bp-xxl: 1400px; /* 1200px */
 $bp-xl: 1200px; /* 1200px */
 $bp-lg: 950px; /* 960px */
 $bp-md: 780px; /* 760px */
-$bp-sm: 640px;
-$bp-xs: 440px;
-$bp-xxs: 390px;
+$bp-sm: 600px;
+$bp-xs: 500px;
+$bp-xxs: 380px;
 
 @mixin respond($breakpoint) {
 	@if $breakpoint == xxl {

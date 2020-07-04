@@ -18,6 +18,9 @@ html {
 	@include respond(lg) {
 		font-size: 56.25%‬; //9px
 	}
+	@include respond(md) {
+		font-size: 50%‬; //8px
+	}
 }
 
 body {
