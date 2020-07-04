@@ -3,6 +3,10 @@
 	padding-top: 0;
 	position: relative;
 
+	@include respond(xxl) {
+		padding: 5rem 4.5rem;
+		padding-top: 0;
+	}
 	@include respond(xl) {
 		padding: 5rem 3rem;
 		padding-top: 0;
@@ -23,8 +27,7 @@
 		}
 
 		@include respond(sm) {
-			text-align: center;
-			padding: 0 1rem;
+			display: none;
 		}
 	}
 
@@ -39,12 +42,7 @@
 		}
 
 		@include respond(sm) {
-			margin-left: auto;
-			margin-right: auto;
-
-			text-align: justify;
-			text-align-last: center;
-			padding: 0 1.5rem;
+			display: none;
 		}
 	}
 
@@ -86,7 +84,6 @@
 			@include respond(sm) {
 				padding: 1em;
 			}
-		
 		}
 	}
 
