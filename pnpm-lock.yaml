@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   sass: ^1.57.1
-  vite: ^4.0.4
+  vite: ^4.0.0
 
 devDependencies:
   sass: 1.57.1
